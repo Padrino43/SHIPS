@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="src/fav.png">
+  <title>Statki - gra</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="Alliance(1)">
+  <div id="title">
+    <div id="sounds">
+      <span id="sound" onclick="Sound()"><img src="src/img/s_on.png" alt=""> </span>
+      <span id="music" onclick="Music()"><img src="src/img/music.png" alt=""></span>
+    </div>
+<span>Bitwa Morska<span>
+  </div>
+  <div id="container">
+    <div id="sounds">
+    </div>
+    <div class="choose">
+      <h2> Wybierz poziom trudności: </h2>
+      <div id="textl">
+        <input type="radio" name="diff" id="l" onclick="sbutton.play()" checked><label for="l"> Łatwy</label>
+        <br>
+        <input type="radio" name="diff" id="w" onclick="sbutton.play()"><label for="w"> Wyzwanie</label>
+      </div>
+    </div>
+    <div class="choose">
+      <h2>Wybierz stronę konfliktu:</h2>
+      <div class="site">
+        <img class="sitee" src="src/img/alianci.jpg"><br>
+        <input type="radio" name="cho" id="alliance" checked onclick="Alliance(1)">
+        <label for="alliance">Alianci</label>
+      </div>
+      <div id="versus">
+        <img src="src/img/vs.png">
+      </div>
+      <div class="site">
+        <img class="sitee" src="src/img/osi.jpg"><br>
+        <input type="radio" name="cho" id="osi" onclick="Alliance(2)">
+        <label for="osi">Państwa osi</label>
+      </div>
+      <div class="cl"></div>
+      <div class="choose">
+        <h2>Wybierz nazwę kapitana:</h2>
+        <div id="cpt1" class="cptt">Kapitan brytyjski:
+        <input type="text" id="captains1" class="cptnick" placeholder="Podaj nazwę kapitana"></div>
+        <div id="cpt2" class="cptt">Kapitan amerykański:
+          <input type="text" id="captains2" class="cptnick" placeholder="Podaj nazwę kapitana">
+        </div>
+      </div>
+    </div>
+    <p onclick="GetValues()">Cała Naprzód!</p>
+  </div>
+
+
+<!--  <div id="battlemap">
+    <img src="src/map.jpg">
+    <div>
+      <label> mjaaaaaa
+        <input type="radio" name="map" id="mj">
+      </label>
+      <label> md
+        <input type="radio" name="map" id="md">
+      </label>
+      <label> mt
+        <input type="radio" name="map" id="mt">
+      </label>
+    </div>
+    <input type="button" id="wruuc" onclick="Map()" value="Wróć">
+    <input type="button" id="dalej" onclick="Start()" value="Dalej">
+  </div>-->
+  <div id="authors">
+    &copy; 2021 Ybiza-2281, Padrino43, Popo, Ar2doX
+  </div>
+<script src="main.js"></script>
+</body>
+</html>

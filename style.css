@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Roboto:ital,wght@0,300;1,300&family=Zen+Dots&display=swap');
+* {
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #444;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d2f39;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0c1e28;
+}
+body {
+  color: #fff;
+  background-color: #000;
+  background-image: url(src/img/tlo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 360px;
+  height: 100vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sounds
+{
+  float: left;
+  padding-right: 10px;
+  padding-left: 20px;
+  position: absolute;
+}
+#sounds img
+{
+  height: 29px;
+  cursor: pointer;
+}
+#sounds img:hover
+{
+  opacity: 0.8;
+}
+#title {
+  font-size: 50px;
+  font-family: 'Zen Dots', cursive;
+  text-align: center;
+  background-color: #1d2f39;
+  opacity: 0.8;
+  letter-spacing: 5px;
+  box-shadow: 0 11px 22px rgb(0 0 0 / 20%), 0 7px 7px rgb(0 0 0 / 24%);
+}
+#container {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto 0 auto;
+  font-size: 28px;
+  width: 70%;
+  box-shadow: 0 11px 22px rgb(0 0 0 / 20%), 0 7px 7px rgb(0 0 0 / 24%),
+              -11px 0 22px rgb(0 0 0 / 20%), 7px 0 7px rgb(0 0 0 / 24%),
+              -11px 0 22px rgb(0 0 0 / 20%), -7px 0 7px rgb(0 0 0 / 24%);
+  font-family: 'Roboto', sans-serif;
+  background-color: #12243a;
+  opacity: 0.8;
+}
+.containerg {
+  width: 100% !important;
+  transition: 2s;
+}
+#container p
+{
+  padding: 10px 0px 20px 0px;
+  color: white;
+}
+#container p:hover
+{
+  color: #f00;
+  cursor: pointer;
+}
+#p1, #p2 {
+  margin-top: 15px;
+  /*width: 40%;
+  height: 600px;*/
+  position: relative;
+  height: 600px;
+  width: 39.5%;
+  float: left;
+  background-color: white;
+}
+#p1
+{
+  background-color: blue;
+}
+#p2
+{
+  background-color: red;
+}
+#stats {
+  margin-top: 15px;
+  width: 20%;
+  display: inline-block;
+  height: 600px;
+  background-color: #999;
+  float: left;
+}
+.choose {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+h2 {
+  padding-top: 15px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 0 7px 0;
+}
+#textl {
+  margin: 0 auto 0 auto;
+  width: 160px;
+  text-align: left;
+  font-size: 24px;
+}
+.site {
+  width: 29%;
+  padding: 0 5% 0 5%;
+  float: left;
+}
+#versus
+{
+  width:12%;
+  float: left;
+  padding: 2% 5% 0 5%;
+}
+#versus img
+{
+  width: 100%;
+}
+.sitee {
+   width: 70%;
+   text-align: center;
+}
+.cptt {
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto 0 auto;
+}
+.cptnick {
+  width: 200px;
+}
+
+#year
+{
+  text-align: center;
+  font-family: 'Karantina', cursive;
+  font-size: 70px;
+}
+.warsite {
+  width: 25%;
+  padding: 0 5% 0 5%;
+  float: left;
+}
+.warsite img
+{
+  width: 50%;
+  height: 100%;
+}
+.battleflag {
+  width: 18%;
+  padding: 1% 9% 0% 9%;
+  float: left;
+}
+.battleflag img
+{
+  width: 50%;
+  height: 100%;
+}
+#warversus
+{
+  width:20%;
+  float: left;
+  padding: 1% 5% 0 5%;
+}
+#warversus img
+{
+  width: 50%;
+}
+#battleversus
+{
+  width:17%;
+  float: left;
+  padding: 1% 5% 0% 5%;
+}
+#battleversus img
+{
+  width: 50%;
+}
+#battlemap
+{
+  padding-top: 15px;
+}
+#battlemap img
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+#playerField
+{
+  width: 100%;
+}
+.square
+{
+  width: 9.72%;
+  height: 58px;
+  display: inline-block;
+  border: 1px solid black;
+  position: relative;
+  vertical-align: top;
+}
+#p1 .square:hover
+{
+  background-color: blue;
+}
+#p2 .square:hover
+{
+  background-color: orange;
+  cursor: crosshair;
+}
+.myships {
+  background-color: blue;
+}
+.hit {
+  background-color: #EE0000;
+  background-image: url(src/img/xx.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.miss {
+  background-color: #99C2E1;
+  background-image: url(src/img/xx.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sunk {
+  background-color: #555;
+}
+#statNames
+{
+  width: 100%;
+  height: 25%;
+  padding-top: 15px;
+  font-size: 100%;
+}
+.myName
+{
+  color:blue;
+}
+.enemyName
+{
+  color: red;
+}
+#statShips
+{
+  margin-top: 1%;
+  width: 100%;
+  height: 64.5%;
+  border: 1px solid black;
+}
+.ships
+{
+  background-color: blue;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 12%;
+}
+.ships:hover
+{
+  background-color: green;
+  cursor: pointer;
+}
+#Durability
+{
+  letter-spacing: 2px;
+  padding-bottom: 5%;
+}
+#statButtons
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 7%;
+}
+#statButtons img
+{
+  width:15%;
+  height: 100%;
+  display: inline-block;
+  margin: 0 3% 0 3%;
+}
+#statButtons img:hover
+{
+  background-color: #ffff1a;
+}
+
+
+
+
+
+
+
+/* footer */
+#authors {
+  padding-top: 10px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Karantina', cursive;
+}
+.cl {clear: both;}
+
+/* responsive */
+@media only screen and (max-width:1000px){
+	#container {
+    width: 100%;
+  }
+}
